@@ -717,24 +717,8 @@ a {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  margin-right: 15px;
   border: 2px solid #A684FF;
-}
-
-.customer-meta{
-  margin-left: 18px;
-}
-.customer-meta h4{
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
-  color: #333;
-}
-
-.customer-meta p{
-  font-size:16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #333;
 }
 
 .customer-meta .customer-stars img{
@@ -936,7 +920,7 @@ a {
 }
 
 .main-footer {
-  background-color: #0b1320;
+  background-color: #101828;
   color: #ffffff;
   padding: 64px 0 30px 0;
   font-family: sans-serif;
@@ -1088,4 +1072,185 @@ a {
   border-radius: 8px;
   object-fit: contain;
   display: inline-block;
+}
+
+
+@media screen and (max-width: 640px) and (max-width: 768px){
+
+  .container {
+    width: 90%;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  
+  #heroSection {
+    padding: 100px 0 40px 0; 
+    height: auto;
+  }
+
+  .hero-parent {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-left {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+  }
+
+  .hero-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+
+  .hero-buttons {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+
+  .outer-table {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 16px; 
+  }
+
+  .customers-say{
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 1rem ;
+  }
+
+  .review-card {
+    position: static; 
+    flex-basis: 100%;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  
+  .customer-header {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 16px; 
+  }
+
+
+  .customer-left {
+    align-items: center;
+    gap: 12px; 
+    width: 100%;
+  }
+
+  .customer-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+
+  .customer-right {
+    align-items: flex-end;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .related-card{
+    flex-direction: column;
+  }
+
+  .related-card .card{
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+  .container {
+    width: 90%;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  
+  #heroSection {
+    padding: 100px 0 40px 0; 
+    height: auto;
+  }
+
+  .hero-parent {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-left {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+  }
+
+  .hero-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+
+  .hero-buttons {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+
+  .outer-table {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 16px; 
+  }
+
+  .customers-say{
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 1.25rem;
+  }
+
+  .review-card{
+    flex-basis: 100%; 
+    width: 100%;
+    position: static;
+  }
+
+    .related-card{
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .related-card .card{
+    width: calc(50% - 8px);
+  }
+
 }
